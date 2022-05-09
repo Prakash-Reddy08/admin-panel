@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 
 const Home = () => {
@@ -6,7 +7,10 @@ const Home = () => {
         <Wrapper>
             <div className='home'>
                 <Sidebar />
-                <div className="homeContainer">Container</div>
+                <div className="homeContainer">
+                    <Navbar />
+                    Home content
+                </div>
             </div>
         </Wrapper>
     )
