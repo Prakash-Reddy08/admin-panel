@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Chart from '../../components/Chart';
+import Featured from '../../components/Featured';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import Widget from '../../components/Widget';
@@ -16,6 +18,10 @@ const Home = () => {
                         <Widget type="earnings" />
                         <Widget type="balance" />
                     </div>
+                    <div className="charts">
+                        <Featured />
+                        <Chart />
+                    </div>
                 </div>
             </div>
         </Wrapper>
@@ -28,11 +34,14 @@ const Wrapper = styled.div`
         .homeContainer{
             flex:6; 
         }
-        .widgets{
+        .widgets,.charts{
             display:flex;
             flex-wrap:wrap;
             padding: 20px;
             gap: 20px;
+        }
+        .charts{
+            padding:5px 20px;
         }
     }
 `
