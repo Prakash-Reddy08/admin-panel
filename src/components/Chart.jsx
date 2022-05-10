@@ -49,7 +49,7 @@ const Chart = () => {
     return (
         <Wrapper>
             <div className='chart'>
-                <ResponsiveContainer width="100%" aspect={2 / 0.96}>
+                <ResponsiveContainer width="100%" aspect={2 / 1}>
                     <AreaChart width={730} height={250} data={data}
                         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                         <defs>
@@ -78,6 +78,7 @@ const Chart = () => {
 const Wrapper = styled.div`
     flex: 4;
     .chart{
+        max-height:410px;
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     padding: 10px;
