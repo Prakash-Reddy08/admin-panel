@@ -18,7 +18,9 @@ const Sidebar = () => {
         <Wrapper>
             <div className="sidebar">
                 <div className="top">
-                    <span className="logo">Admin</span>
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <span className="logo">Admin</span>
+                    </Link>
                 </div>
                 <hr />
                 <div className="center">
